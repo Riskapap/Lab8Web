@@ -22,7 +22,7 @@ CREATE TABLE data_barang (
 ```
 ![LANGKAH 2 MEMBUAT TABEL](https://user-images.githubusercontent.com/56241285/120355548-9410b680-c32d-11eb-9c1f-02274865e503.png)
 ![LANGKAH 2 MEMBUAT TABEL 2](https://user-images.githubusercontent.com/56241285/120355556-95da7a00-c32d-11eb-94ed-78bc83d1f48e.png)
-## Tambahkan data Tabel
+## 3. Tambahkan data Tabel
 ```
 INSERT INTO data_barang (kategori, nama, gambar, harga_beli, harga_jual, stok)
 VALUES ('Elektronik', 'HP Samsung Android', 'hp_samsung.jpg', 2000000, 2400000, 5),
@@ -31,9 +31,9 @@ VALUES ('Elektronik', 'HP Samsung Android', 'hp_samsung.jpg', 2000000, 2400000, 
 ```
 ![LANGKAH 3 MENAMBAHKAN DATA](https://user-images.githubusercontent.com/56241285/120355742-bd314700-c32d-11eb-8431-aa034b87f83d.png)
 ![LANGKAH 3 MENAMBAHKAN DATA 2](https://user-images.githubusercontent.com/56241285/120355745-be627400-c32d-11eb-92cc-1f8b462b7002.png)
-## Buat folder `lab8_php_database` pada root directory web server `(d:\xampp\htdocs)`
+## 4. Buat folder `lab8_php_database` pada root directory web server `(d:\xampp\htdocs)`
 ![LANGKAH 4 MEMBUAT FILE PADA HTDOCS](https://user-images.githubusercontent.com/56241285/120355885-e94cc800-c32d-11eb-9bc9-7b2a3afe45a5.png)
-## Buat file php baru dengan nama `koneksi.php` pada directory `(d:\xampp\htdocs\lab8_php_database)`. Ini coding untuk mengkoneksikan database
+## 5. Buat file php baru dengan nama `koneksi.php` pada directory `(d:\xampp\htdocs\lab8_php_database)`. Ini coding untuk mengkoneksikan database
 ```
 <?php
 $host = "localhost";
@@ -50,7 +50,7 @@ if ($conn == false)
 ?>
 ```
 ![LANGKAH 5 MEMBUAT KONEKSI PHP](https://user-images.githubusercontent.com/56241285/120356249-519ba980-c32e-11eb-9a59-20d25b193ea8.png)
-## Buat file php baru dengan nama `index.php` pada directory `(d:\xampp\htdocs\lab8_php_database)`
+## 6. Buat file php baru dengan nama `index.php` pada directory `(d:\xampp\htdocs\lab8_php_database)`
 ```
 <?php
 include("koneksi.php");
@@ -111,7 +111,7 @@ $result = mysqli_query($conn, $sql);
 ![LANGKAH 6 MEMBUAT INDEX PHP (coding 2)](https://user-images.githubusercontent.com/56241285/120356308-64ae7980-c32e-11eb-80fa-99e46c937bce.png)
 * Hasilnya
 ![LANGKAH 6 MEMBUAT INDEX PHP](https://user-images.githubusercontent.com/56241285/120356310-65471000-c32e-11eb-9f4e-f8f672afab71.png)
-## Buat file php baru dengan nama `tambah.php` pada directory `(d:\xampp\htdocs\lab8_php_database)`
+## 7. Buat file php baru dengan nama `tambah.php` pada directory `(d:\xampp\htdocs\lab8_php_database)`
 ```
 <?php
 error_reporting(E_ALL);
@@ -199,7 +199,7 @@ if (isset($_POST['submit']))
 * Hasilnya
 ![LANGKAH 7 MENAMBAHKAN BARANG](https://user-images.githubusercontent.com/56241285/120356394-7e4fc100-c32e-11eb-9000-56af802dc4d6.png)
 ![LANGKAH 7 MENAMBAHKAN BARANG 2](https://user-images.githubusercontent.com/56241285/120356390-7e4fc100-c32e-11eb-88c7-d4fc7a18abd1.png)
-## Buat file php baru dengan nama `ubah.php` pada directory `(d:\xampp\htdocs\lab8_php_database)`
+## 8. Buat file php baru dengan nama `ubah.php` pada directory `(d:\xampp\htdocs\lab8_php_database)`
 ```
 <?php
 error_reporting(E_ALL);
@@ -309,7 +309,7 @@ sebelum diubah
 ![LANGKAH 8 UBAH BARANG 1](https://user-images.githubusercontent.com/56241285/120356802-ed2d1a00-c32e-11eb-8301-d9427dbe8241.png)
 sesudah diubah
 ![LANGKAH 8 UBAH BARANG 2](https://user-images.githubusercontent.com/56241285/120356816-f0c0a100-c32e-11eb-87b2-6d65e677ec58.png)
-## Buat file php baru dengan nama `hapus.php` pada directory `(d:\xampp\htdocs\lab8_php_database)`
+## 9. Buat file php baru dengan nama `hapus.php` pada directory `(d:\xampp\htdocs\lab8_php_database)`
 ```
 <?php
 include_once 'koneksi.php';
@@ -325,7 +325,7 @@ sebelum dihapus
 ![LANGKAH 9 MENGHAPUS BARANG 1](https://user-images.githubusercontent.com/56241285/120356931-1057c980-c32f-11eb-835b-e405fea2d0d7.png)
 sesudah dihapus
 ![LANGKAH 9 MENGHAPUS BARANG 2](https://user-images.githubusercontent.com/56241285/120356936-10f06000-c32f-11eb-80b5-b56b3f0fc78e.png)
-## Tambahkan CSS untuk mempercantik tampilan. Buat file CSS baru dengan nama `style.css` pada directory `(d:\xampp\htdocs\lab8_php_database)`
+## 10. Tambahkan CSS untuk mempercantik tampilan. Buat file CSS baru dengan nama `style.css` pada directory `(d:\xampp\htdocs\lab8_php_database)`
 ```
 body{
     font-family: sans-serif;
